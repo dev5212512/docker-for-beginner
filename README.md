@@ -32,7 +32,7 @@ just pull the image from docker hub into your machine
 ```sh
 # Build docker image
 docker build -t tag_name .
-. is for instruct the build to file that Dockerfile
+# . is for instruct the build to file that Dockerfile
 
 docker images
 # to list all the built images
