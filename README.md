@@ -55,6 +55,14 @@ docker tag 43a69cee79b3 dev5212512/docker-node
 docker push dev5212512/docker-node
 ```
 
+## Verify
+
+go to https://labs.play-with-docker.com/
+```sh
+docker pull dev5212512/docker-node
+```
+
+
 # Push code to GitHub with an SSH key
 How to copy public key to the clipboard
 
