@@ -34,7 +34,8 @@ docker pull that_image
 docker run that_image
 ```
 
-# How to copy public key to the clipboard
+# Push code to GitHub with an SSH key
+How to copy public key to the clipboard
 
 In Mac we can use pbcopy < pub file
 
