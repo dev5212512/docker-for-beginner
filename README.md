@@ -30,8 +30,29 @@ Once we have an image we can push it to a docker registry like docker hub
 Docker hub to docker is like github to git [storage for docker images]
 just pull the image from docker hub into your machine 
 ```sh
+# Build docker image
+docker build -t tag_name .
+. is for instruct the build to file that Dockerfile
+
+docker images
+# to list all the built images
+docker run tag_name
+
 docker pull that_image
 docker run that_image
+```
+
+## Push your image to dockerhub
+
+```sh
+docker login --username=dev5212512 --password=acess_token
+# get access token from https://hub.docker.com/settings/security
+
+docker images
+
+# Tag your container by using container id
+docker tag 43a69cee79b3 dev5212512/docker-node
+docker push dev5212512/docker-node
 ```
 
 # Push code to GitHub with an SSH key
