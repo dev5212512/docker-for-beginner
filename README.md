@@ -62,6 +62,20 @@ go to https://labs.play-with-docker.com/
 docker pull dev5212512/docker-node
 ```
 
+## How to iteract with a particular container
+```sh
+docker run -it container_name
+```
+
+## To delete all containers including its volumes
+```sh
+docker rm -vf $(docker ps -aq)
+```
+
+## To delete all the images,
+```sh
+docker rmi -f $(docker images -aq)
+```
 
 # Push code to GitHub with an SSH key
 How to copy public key to the clipboard
